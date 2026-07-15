@@ -39,7 +39,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <a
-          href="https://wa.me/917877349895"
+          href="/apply"
           className="rounded-lg bg-blue-700 px-5 py-2 text-white transition hover:bg-blue-800"
         >
           Enroll Now

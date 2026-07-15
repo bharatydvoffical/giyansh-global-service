@@ -63,7 +63,7 @@ export default function Admission() {
 
         <div className="mt-12 text-center">
           <a
-            href="#contact"
+            href="/apply"
             className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
           >
             Enroll Now

@@ -17,7 +17,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="#contact"
+              href="/apply"
               className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100"
             >
               Enroll Now

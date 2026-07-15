@@ -60,9 +60,12 @@ export default function Fees() {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+            <a
+              href="/apply"
+              className="inline-block bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition duration-300"
+            >
               Enroll Now
-            </button>
+            </a>
           </div>
 
         </div>
