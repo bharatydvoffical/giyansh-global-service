@@ -58,11 +58,11 @@ export default function Hero() {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <img
-            src="/hero.jpg"
-            alt="Banking Career"
-            className="rounded-xl shadow-2xl"
+            src="/WhatsApp Image 2026-07-15 at 3.39.03 PM.jpeg"
+            alt="WhatsApp contact"
+            className="w-full h-[560px] max-w-[760px] rounded-3xl shadow-2xl object-cover"
           />
         </div>
 

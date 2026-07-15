@@ -25,7 +25,7 @@ export default function Contact() {
 
               <div>
                 <h4 className="font-semibold text-gray-300">📱 Mobile</h4>
-                <p className="text-lg">+91 9799906095</p>
+                <p className="text-lg">+91 7877349895</p>
               </div>
 
               <div>

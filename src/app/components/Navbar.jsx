@@ -7,11 +7,18 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white text-slate-900 shadow-md dark:bg-slate-900 dark:text-slate-100">
       <div className="mx-auto flex flex-wrap items-center justify-between gap-4 max-w-7xl px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-blue-900 dark:text-blue-300">
-          GIYANSH
-          <span className="block text-sm font-medium text-slate-600 dark:text-slate-400">
-            GLOBAL SERVICES
-          </span>
+        <Link href="/" className="flex items-center gap-3 text-blue-900 dark:text-blue-300">
+          <img
+            src="/WhatsApp Image 2026-07-15 at 3.39.03 PM.jpeg"
+            alt="Giyansh logo"
+            className="h-12 w-12 rounded-full object-cover border border-white/20"
+          />
+          <div className="text-lg font-bold leading-tight">
+            GIYANSH
+            <span className="block text-sm font-medium text-slate-600 dark:text-slate-400">
+              GLOBAL SERVICES
+            </span>
+          </div>
         </Link>
 
         {/* Navigation */}

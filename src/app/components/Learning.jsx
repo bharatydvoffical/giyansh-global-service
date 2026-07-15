@@ -1,135 +1,50 @@
-// components/Learning.jsx
-
-"use client";
-
-import {
-  FaUniversity,
-  FaMoneyCheckAlt,
-  FaCreditCard,
-  FaUsers,
-  FaHandshake,
-  FaComments,
-  FaUserTie,
-  FaEnvelope,
-  FaFileAlt,
-  FaBriefcase,
-} from "react-icons/fa";
-
-const learningData = [
-  {
-    icon: <FaUniversity />,
-    title: "Banking Fundamentals",
-    desc: "Learn the basics of banking operations and financial services.",
-  },
-  {
-    icon: <FaMoneyCheckAlt />,
-    title: "Retail Banking",
-    desc: "Understand savings, current accounts, deposits, and customer services.",
-  },
-  {
-    icon: <FaCreditCard />,
-    title: "Banking Products",
-    desc: "Explore loans, insurance, investments, and credit cards.",
-  },
-  {
-    icon: <FaHandshake />,
-    title: "Sales & Cross Selling",
-    desc: "Develop sales strategies and customer conversion techniques.",
-  },
-  {
-    icon: <FaUsers />,
-    title: "Customer Relationship",
-    desc: "Build strong customer relationships using CRM practices.",
-  },
-  {
-    icon: <FaComments />,
-    title: "Communication Skills",
-    desc: "Improve spoken English, confidence, and professional communication.",
-  },
-  {
-    icon: <FaUserTie />,
-    title: "Personality Development",
-    desc: "Enhance your personality and workplace etiquette.",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Professional Email Writing",
-    desc: "Write clear, professional emails for business communication.",
-  },
-  {
-    icon: <FaFileAlt />,
-    title: "Resume Building",
-    desc: "Create an ATS-friendly resume that stands out.",
-  },
-  {
-    icon: <FaBriefcase />,
-    title: "Interview Preparation",
-    desc: "Practice HR & Banking interviews with mock sessions.",
-  },
+const learningItems = [
+  "Banking Fundamentals",
+  "Retail Banking",
+  "Banking Products & Services",
+  "Financial Products",
+  "Loan Products",
+  "Credit Card Sales",
+  "Customer Relationship Management (CRM)",
+  "Sales & Cross Selling Techniques",
+  "Communication Skills",
+  "Personality Development",
+  "Business Etiquette",
+  "Professional Email Writing",
+  "Resume Building",
+  "Interview Preparation",
+  "Mock Interviews",
+  "Job Readiness Skills",
 ];
 
 export default function Learning() {
   return (
-    <section className="py-5 bg-light" id="learning">
-      <div className="container">
-
-        <div className="text-center mb-5">
-          <span className="badge bg-primary px-3 py-2 fs-6">
+    <section id="learning" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-blue-900">
             What You'll Learn
-          </span>
-
-          <h2 className="fw-bold mt-3">
-            Skills That Make You Job Ready
           </h2>
-
-          <p className="text-muted col-lg-8 mx-auto">
-            Our Banking & Finance Career Launch Program is designed to provide
-            practical knowledge, professional skills, and interview confidence
-            required to start a successful career.
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Build practical banking, finance, communication, and interview
+            skills to become industry-ready.
           </p>
         </div>
 
-        <div className="row g-4">
-          {learningData.map((item, index) => (
-            <div className="col-md-6 col-lg-4" key={index}>
-              <div
-                className="card h-100 border-0 shadow-sm rounded-4 p-4"
-                style={{
-                  transition: "0.3s",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-8px)";
-                  e.currentTarget.style.boxShadow =
-                    "0 12px 30px rgba(0,0,0,0.15)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow =
-                    "0 4px 12px rgba(0,0,0,0.08)";
-                }}
-              >
-                <div
-                  className="d-flex align-items-center justify-content-center rounded-circle bg-primary text-white mb-3"
-                  style={{
-                    width: "65px",
-                    height: "65px",
-                    fontSize: "28px",
-                  }}
-                >
-                  {item.icon}
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {learningItems.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 border-t-4 border-blue-700"
+            >
+              <div className="text-3xl mb-4">📘</div>
 
-                <h5 className="fw-bold">{item.title}</h5>
-
-                <p className="text-muted mb-0">
-                  {item.desc}
-                </p>
-              </div>
+              <h3 className="text-lg font-semibold text-gray-800">
+                {item}
+              </h3>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
