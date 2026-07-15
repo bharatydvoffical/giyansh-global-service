@@ -1,31 +1,50 @@
+
 export default function Program() {
   return (
-    <section id="program" className="py-20">
-      <div className="mx-auto max-w-5xl px-6">
-        <h2 className="text-3xl font-semibold mb-4 text-slate-900 dark:text-slate-100">Program</h2>
-        <p className="max-w-3xl text-base leading-8 text-slate-700 dark:text-slate-300">
-          Our program combines live training, real projects, and mentorship. You learn industry-ready skills, practical tools, and how to present your work to employers.
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center text-blue-900">
+          Banking & Finance Career Launch Program
+        </h2>
+
+        <p className="text-center text-gray-600 mt-4 max-w-3xl mx-auto">
+          Our specially designed training program prepares students for
+          successful careers in Banking, NBFCs, Financial Institutions,
+          Insurance, and Sales.
         </p>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-          <li className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100">Live Classes</h3>
-            <p className="mt-2 text-slate-600 dark:text-slate-300">Interactive sessions with expert instructors and hands-on exercises.</p>
-          </li>
-          <li className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100">Project Practice</h3>
-            <p className="mt-2 text-slate-600 dark:text-slate-300">Build real-world projects that demonstrate your skills to employers.</p>
-          </li>
-          <li className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100">Mentorship</h3>
-            <p className="mt-2 text-slate-600 dark:text-slate-300">Get one-on-one guidance, feedback, and career planning support.</p>
-          </li>
-          <li className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-            <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-100">Placement Help</h3>
-            <p className="mt-2 text-slate-600 dark:text-slate-300">Resume review, interview prep, and employer introductions.</p>
-          </li>
-        </ul>
+
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-blue-900">
+              Duration
+            </h3>
+            <p className="mt-3 text-gray-600">
+              3 Months Job Ready Program
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-blue-900">
+              Training Mode
+            </h3>
+            <p className="mt-3 text-gray-600">
+              Online Live Interactive Classes
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+            <h3 className="text-xl font-semibold text-blue-900">
+              Course Fee
+            </h3>
+            <p className="mt-3 text-gray-600">
+              ₹10,000 Only
+            </p>
+            <p className="text-green-600 font-semibold mt-2">
+              ₹4,000 × 3 Installments
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
-
