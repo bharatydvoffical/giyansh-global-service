@@ -50,25 +50,25 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:border-blue-500 outline-none"
+                className="w-full input-dark"
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:border-blue-500 outline-none"
+                className="w-full input-dark"
               />
 
               <input
                 type="tel"
                 placeholder="Mobile Number"
-                className="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:border-blue-500 outline-none"
+                className="w-full input-dark"
               />
 
               <textarea
                 rows="5"
                 placeholder="Your Message"
-                className="w-full p-3 rounded-lg bg-slate-800 border border-gray-700 focus:border-blue-500 outline-none"
+                className="w-full input-dark"
               ></textarea>
 
               <button className="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-semibold transition">

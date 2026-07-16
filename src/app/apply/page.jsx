@@ -95,8 +95,8 @@ export default function ApplyPage() {
               name="firstName"
               value={data.firstName}
               onChange={changeHandler}
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
-              placeholder="Enter first name"
+              className="w-full mt-2 input-dark"
+              placeholder="Enter details"
             />
           </div>
 
@@ -106,8 +106,8 @@ export default function ApplyPage() {
               name="lastName"
               value={data.lastName}
               onChange={changeHandler}
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
-              placeholder="Enter last name"
+              className="w-full mt-2 input-dark"
+              placeholder="Enter details"
             />
           </div>
 
@@ -118,7 +118,7 @@ export default function ApplyPage() {
               name="dob"
               value={data.dob}
               onChange={changeHandler}
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              className="w-full mt-2 input-dark"
             />
           </div>
 
@@ -128,7 +128,7 @@ export default function ApplyPage() {
               name="gender"
               value={data.gender}
               onChange={changeHandler}
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              className="w-full mt-2 input-dark"
             >
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
@@ -143,8 +143,8 @@ export default function ApplyPage() {
               name="mobile"
               value={data.mobile}
               onChange={changeHandler}
-              placeholder="9876543210"
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              placeholder="Enter details"
+              className="w-full mt-2 input-dark"
             />
           </div>
 
@@ -155,8 +155,8 @@ export default function ApplyPage() {
               type="email"
               value={data.email}
               onChange={changeHandler}
-              placeholder="example@gmail.com"
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              placeholder="Enter details"
+              className="w-full mt-2 input-dark"
             />
           </div>
 
@@ -166,7 +166,7 @@ export default function ApplyPage() {
               name="education"
               value={data.education}
               onChange={changeHandler}
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              className="w-full mt-2 input-dark"
             >
               <option value="">Select Education</option>
               <option value="12th">12th</option>
@@ -200,8 +200,8 @@ export default function ApplyPage() {
               name="aadhar"
               value={data.aadhar}
               onChange={changeHandler}
-              placeholder="XXXX XXXX XXXX"
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              placeholder="Enter details"
+              className="w-full mt-2 input-dark"
             />
           </div>
 
@@ -211,8 +211,8 @@ export default function ApplyPage() {
               name="pan"
               value={data.pan}
               onChange={changeHandler}
-              placeholder="ABCDE1234F"
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
+              placeholder="Enter details"
+              className="w-full mt-2 input-dark"
             />
           </div>
 
@@ -223,8 +223,8 @@ export default function ApplyPage() {
               value={data.address}
               onChange={changeHandler}
               rows="4"
-              className="w-full mt-2 px-4 py-3 border border-slate-300 rounded-2xl outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-200"
-              placeholder="Full address"
+              className="w-full mt-2 input-dark"
+              placeholder="Enter details"
             />
           </div>
 

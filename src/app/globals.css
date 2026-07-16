@@ -24,3 +24,61 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Dark-themed input utility used across the app */
+.input-dark {
+  background: #5f6468;
+  color: #e6eef8;
+  border: 1px solid #d0d6dd;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  caret-color: #e6eef8;
+}
+.input-dark:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+  border-color: #3b82f6;
+}
+
+/* Improve appearance of date inputs when using dark input */
+input.input-dark[type="date"] {
+  /* match .input-dark so DOB looks consistent with other inputs */
+  background: #5f6468;
+  color: #e6eef8;
+  border: 1px solid #d0d6dd;
+  caret-color: #e6eef8;
+}
+
+/* Make the calendar picker icon visible on dark backgrounds */
+input.input-dark[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(2) contrast(1.2);
+}
+
+/* Firefox date input text color */
+input.input-dark[type="date"]::-moz-focus-inner {
+  color: #e6eef8;
+}
+
+/* Dark select styling to match .input-dark */
+select.input-dark {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #42474f;
+  color: #e6eef8;
+  border: 1px solid #243242;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  border-radius: 0.5rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23e6eef8' stroke-width='2'><path d='M6 8l4 4 4-4'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+select.input-dark:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+  border-color: #3b82f6;
+}
+select.input-dark::-ms-expand {
+  display: none;
+}
