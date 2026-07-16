@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import clientPromise from "../../../../lib/mongodb";
 
 export async function POST(request) {
   try {
@@ -12,7 +11,20 @@ export async function POST(request) {
       );
     }
 
-    const client = await clientPromise;
+    // Lazy-import the DB client so the module is not evaluated at build-time.
+    const { default: clientPromise } = await import("../../../../lib/mongodb");
+
+    let client;
+    try {
+      client = await clientPromise;
+    } catch (dbErr) {
+      console.error("Database not configured:", dbErr);
+      return NextResponse.json(
+        { success: false, message: "Database not configured. Please try later." },
+        { status: 503 }
+      );
+    }
+
     const db = client.db();
     const collection = db.collection("applications");
 
