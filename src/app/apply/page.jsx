@@ -35,7 +35,7 @@ export default function ApplyPage() {
     }
 
     try {
-      const response = await fetch("/api/apply", {
+      const response = await fetch("https://formspree.io/f/xldejbda", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,11 +46,11 @@ export default function ApplyPage() {
       const result = await response.json();
 
       if (!response.ok) {
-        alert(result.message || "Submission failed. Please try again.");
+        alert(result.error || "Submission failed. Please try again.");
         return;
       }
 
-      alert(result.message);
+      alert("Application Submitted Successfully!");
       setData({
         firstName: "",
         lastName: "",
