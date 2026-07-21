@@ -1,13 +1,21 @@
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic";
+
 
 export async function GET() {
-  return NextResponse.json({
-    success: true,
-    status: "OK",
-  });
+  return NextResponse.json({ success: true, status: "OK" });
 }
+
+export async function POST(request) {
+  try {
+    const data = await request.json();
+
+    if (!data.firstName || !data.lastName || !data.email) {
+      return NextResponse.json(
+        { success: false, message: "Please provide first name, last name, and email." },
+        { status: 400 }
+      );
+    }
 
     // Lazy-import the DB client so the module is not evaluated at build-time.
     const { default: clientPromise } = await import("../../../../lib/mongodb");

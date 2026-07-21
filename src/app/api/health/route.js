@@ -8,7 +8,7 @@ export async function GET() {
   }
 
   try {
-    const { default: clientPromise } = await import("../../../lib/mongodb");
+    const { default: clientPromise } = await import("../../../../lib/mongodb");
     await clientPromise; // will reject if bad
     return NextResponse.json({ healthy: true }, { status: 200 });
   } catch (err) {
